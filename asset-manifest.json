@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/apple_clone/static/css/main.a905058f.css",
-    "main.js": "/apple_clone/static/js/main.e4f75ff9.js",
+    "main.js": "/apple_clone/static/js/main.871b4c88.js",
     "static/js/787.6ceacff6.chunk.js": "/apple_clone/static/js/787.6ceacff6.chunk.js",
     "static/media/watch_logo.png": "/apple_clone/static/media/watch_logo.ab14e3bdd8e3a770981b.png",
     "index.html": "/apple_clone/index.html",
     "main.a905058f.css.map": "/apple_clone/static/css/main.a905058f.css.map",
-    "main.e4f75ff9.js.map": "/apple_clone/static/js/main.e4f75ff9.js.map",
+    "main.871b4c88.js.map": "/apple_clone/static/js/main.871b4c88.js.map",
     "787.6ceacff6.chunk.js.map": "/apple_clone/static/js/787.6ceacff6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a905058f.css",
-    "static/js/main.e4f75ff9.js"
+    "static/js/main.871b4c88.js"
   ]
 }

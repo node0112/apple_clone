@@ -1,0 +1,29 @@
+.header{
+    display: flex;
+    position: sticky;
+    top: 0;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 2.8em;
+    background-color: #161515de;
+    backdrop-filter: blur(20px);
+    z-index: 100;
+}
+.header-links{
+    width: 5.65%;
+}
+.logo{
+    width: 30px;
+    height: 30px;
+    filter: invert(16%) sepia(7%) saturate(17%) hue-rotate(350deg) brightness(97%) contrast(96%);
+    color: none;
+}
+.header-li{
+    font-size: 0.7em;
+    color: #d3d3d3;
+    font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+.header-li:hover{
+    color: whitesmoke;
+}

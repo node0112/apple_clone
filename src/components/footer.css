@@ -1,0 +1,26 @@
+.footer{
+    background-color: #f5f5f7;
+    width: 100%;
+    padding: 20px;
+    font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Apple Legacy Chevron","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+.footer-nav-container{
+   justify-content: space-evenly;
+   width: 80%;
+}
+.li-header{
+    font-weight: 500;
+    font-size: 12px;
+}
+.li-link{
+    font-size: 12px;
+    color: #424245;
+}
+.footer-list{
+    gap: 15px;
+}
+.footer-text{
+    color: #6e6e73;
+    font-size: 12px;
+    margin-top: 30px;
+}

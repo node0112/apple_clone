@@ -1,0 +1,72 @@
+.text-container{
+    position: absolute;
+}
+.title{
+    font-size: 56px;
+    line-height: 1.07143;
+    font-weight: 600;
+    letter-spacing: -.005em;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    margin-top: 1.5em;
+    color: #1d1d1f;
+}
+.tag{
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    font-weight: 400;
+    font-size: 1.75em;
+    color: #1d1d1f;
+    margin-top: 0.5em;
+}
+.links-container{
+    margin-top: 0.8em;
+    gap: 2em;
+}
+.product-link{
+    font-size: 21px;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    font-weight: 400;
+    color: #06c;
+}
+.product-link:hover{
+    text-decoration: underline;
+}
+.hero-card{
+    align-items: center;
+}
+.hero-image{
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+.home-card{
+    width: 45vw;
+    height: 45vw;
+}
+
+.cards-container{
+    display: grid;
+    grid-template-columns: 49vw 49vw;
+    grid-template-rows: 43vw 43vw;
+    gap: 1%;
+    padding: 1%;
+}
+.cards-container{
+    justify-content: center;
+    position: relative;
+}
+.card-image{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.card-title{
+    position: absolute;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+
+}
+.card-tag{
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    position: absolute;
+}

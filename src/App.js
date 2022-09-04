@@ -10,9 +10,51 @@ import Header from './components/Header';
 import Home from './components/Home';
 import Footer from './components/Footer';
 import Watch from './components/Watch';
+import { useState,useEffect } from 'react';
 
 function App() {
+  let imageCount=0
 
+  useEffect(() => {
+    imageCount=1
+  }, [])
+  
+
+  const [imageState,setImageState]=useState(1)
+
+  function slideFront(){ //slides image forward
+    const container=document.querySelector('.product-images')
+    let image=document.getElementById(imageState+1)
+    image.style.opacity='1'
+    if(imageState === 1){
+      container.style.transform='translateX(0px)'
+      document.getElementById(1).style.opacity='0'
+      setImageState(2)
+    }
+    else if(imageState === 2){
+      container.style.transform='translateX(-450px)'
+      document.getElementById(2).style.opacity='0'
+      setImageState(3)
+    }
+    console.log(imageState)
+  }
+
+  function slideBack(){ //slides image backward
+    console.log(imageState)
+    const container=document.querySelector('.product-images')
+    let image=document.getElementById(imageState-1)
+    image.style.opacity='1'
+    if(imageState === 3){
+      container.style.transform='translateX(0px)'
+      document.getElementById(3).style.opacity='0'
+      setImageState(2)
+    }
+    else if(imageState === 2){
+      container.style.transform='translateX(450px)'
+      document.getElementById(2).style.opacity='0'
+      setImageState(1)
+    }
+  }
   //firebase functionality here------>
   const firebaseConfig = {
     apiKey: "AIzaSyDk5DbbIbpXTx7-U2J9TlMKR3kOcd3w_mw",
@@ -26,10 +68,8 @@ function App() {
   firebase.initializeApp(firebaseConfig)
 
   const storage = getStorage();
+
   
-
-  console.log(getDownloadURL(ref(storage, 'home/hero')))
-
   function fetchProductData(){//gets data from server about each product
     let imgLocation //set it to image urI given in product info
     let imageUrl
@@ -37,7 +77,7 @@ function App() {
   }
   return (
    <div>
-    <Watch />
+    <Watch slideFront={slideFront} slideBack={slideBack} imageState={imageState}/>
     <Footer />
    </div>
   );

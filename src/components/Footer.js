@@ -85,7 +85,7 @@ function Footer() {
             </ul>
         </nav>
         <div className='footer-text'  style={{width: '70%', paddingBottom: '15px',borderBottom: '1px solid #6e6e73'}}>More ways to shop: Find an notApple Store or other retailer near you. Or call 1-800-MY-APPLE.</div>
-        <div className='footer-text flex'  style={{width: '70%', paddingBottom: '15px',fontSize: '15px'}}>Copyright © 2022 Apple Inc. All rights reserved.      Privacy Policy | Terms of Use | Sales and Refunds | Legal Site Map  <div style={{marginLeft:'12%'}}> United States</div></div>
+        <div className='footer-text flex'  style={{width: '70%', paddingBottom: '15px',fontSize: '15px'}}>Copyright © 2022 notApple Inc. All rights reserved.      Privacy Policy | Terms of Use | Sales and Refunds | Legal Site Map  <div style={{marginLeft:'12%'}}> United States</div></div>
     </div>
   )
 }

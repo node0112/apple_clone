@@ -9,6 +9,7 @@ import { getDownloadURL, getStorage,ref } from "firebase/storage";
 import Header from './components/Header';
 import Home from './components/Home';
 import Footer from './components/Footer';
+import Watch from './components/Watch';
 
 function App() {
 
@@ -36,8 +37,7 @@ function App() {
   }
   return (
    <div>
-    <Header />
-    <Home />
+    <Watch />
     <Footer />
    </div>
   );

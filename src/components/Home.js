@@ -6,6 +6,7 @@ import LoadingScreen from './LoadingScreen'
 import 'firebase/compat/storage'
 import { getDownloadURL, getStorage } from "firebase/storage";
 import { ref as sRef } from 'firebase/storage';
+import Header from './Header';
 
 function Home() { //dynamic homepage that renders page based off of values in the database
 
@@ -33,6 +34,7 @@ function Home() { //dynamic homepage that renders page based off of values in th
 
     return ( //renders home page when data is recieved
        data ? <div className='main-container flex column'>
+            <Header position={'sticky'}/>
             <div className='hero-card flex column center'>
                 <div className='text-container flex column center'>
                     <div className='title'>{data.heroTitle}</div>

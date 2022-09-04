@@ -1,0 +1,95 @@
+.product-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.product-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color: #1d1d1f;
+    height: 3.3em;
+}
+.product-header-text{
+    width: min(1024px,100%);
+    text-align: left;
+    font-size: 21px;
+    font-weight: 500;
+    align-items: center;
+    padding-left: 6.5%;
+}
+.installment-header{
+    background-color: #f5f5f7;
+    color: #1d1d1f;
+    width: 100vw;
+    height: 3.3em;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    letter-spacing: -.016em;
+}
+
+.product-container{
+    margin-top: 55px;
+    height: 200vh;
+}
+
+.product-images-container{
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+}
+.content-wrapper{
+    width: calc(50vw-calc(58%));
+    object-fit: contain;
+
+    display: flex;
+    justify-content: center;
+    padding: 107px 50px 70px;
+}
+.product-image{
+    position: sticky;
+    top: 0;
+    width: 450px;
+    height: 450px;
+    object-fit: cover;
+    transition: all 0.2s;
+}
+.product-images{ /*contains all scrollable images*/
+    width: calc(450px*3);
+    transition: all 0.4s;
+    transform: translateX(450px);
+
+}
+
+.color-picker{
+    height: 32px;
+    width: 32px;
+}
+.scroll-button{
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    font-size: 40px;
+    color: gray;
+    background-color: rgba(169, 169, 169, 0.66);
+    justify-content: center;
+    cursor: pointer;
+    z-index: 999;
+}
+.right-scroll{
+    position: absolute;
+    left: 80.5%;
+    top: 50%;
+}
+.left-scroll{
+    position: absolute;
+    top: 50%;
+    left: 12%;
+}
+.scroll-button:hover{
+    background-color: whitesmoke;
+}

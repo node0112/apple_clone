@@ -20,3 +20,13 @@
 .main-container{
     width: 100%;
 }
+.def-font{
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+.link{
+    cursor: pointer;
+    color: #06c;
+}
+.link:hover{
+    text-decoration: underline;
+}

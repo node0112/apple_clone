@@ -36,11 +36,9 @@ function App() {
       document.getElementById(2).style.opacity='0'
       setImageState(3)
     }
-    console.log(imageState)
   }
 
   function slideBack(){ //slides image backward
-    console.log(imageState)
     const container=document.querySelector('.product-images')
     let image=document.getElementById(imageState-1)
     image.style.opacity='1'
@@ -55,6 +53,8 @@ function App() {
       setImageState(1)
     }
   }
+
+  
   //firebase functionality here------>
   const firebaseConfig = {
     apiKey: "AIzaSyDk5DbbIbpXTx7-U2J9TlMKR3kOcd3w_mw",

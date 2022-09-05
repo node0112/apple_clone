@@ -34,6 +34,9 @@
     margin-top: 55px;
     height: 200vh;
 }
+.right-container{
+    width: 408px;
+}
 
 .product-images-container{
     display: flex;
@@ -56,7 +59,7 @@
     width: 450px;
     height: 450px;
     object-fit: cover;
-    transition: all 0.2s;
+    transition: all 0.4s;
 }
 .product-images{ /*contains all scrollable images*/
     width: calc(450px*3);
@@ -64,6 +67,9 @@
     transform: translateX(450px);
 
 }
+
+
+/*-----Image Elements----->*/
 
 .color-picker{
     height: 32px;
@@ -92,4 +98,95 @@
 }
 .scroll-button:hover{
     background-color: whitesmoke;
+}
+
+/*----Right Container-----*/
+.product-title{
+    font-weight: 500;
+    font-size: 21px;
+    margin-top: 5px;
+}
+
+.product-brief{
+    margin-top: 6px;
+    font-weight: 500;
+    font-size: 32px;
+}
+
+.base-price{
+    font-size: 17px;
+    margin-top: 14px;
+}
+
+.product-description{
+    margin-top: 14px;
+    font-size: 14px;
+    line-height: 1.42859;
+    margin-bottom: 50px;
+}
+
+.style-selection-menu{
+    border-bottom: 1px solid #d2d2d7;
+    width: 100%;
+    gap: 60px;
+}
+.selection-item{
+    font-size: 17px;
+    font-weight: 500;
+    padding-bottom: 17px;
+}
+
+.color-selected{
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 27px;
+}
+
+.color-selectors-container{
+    margin-top: 20px;
+    margin-bottom: 14px;
+}
+.color-selector{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    padding: 3px;
+    margin-right: 8px;
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+.style-text{
+    font-size: 17px;
+    line-height: 1.47059;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #d2d2d7;
+}
+
+
+.types-container{
+    margin-top: 25px;
+    border-bottom: 1px solid #d2d2d7;
+    padding-bottom: 50px;
+}
+.type-container{
+    padding: 14px;
+    border: 2px solid #d2d2d7;
+    border-radius: 10px;
+    line-height: 1.23536;
+    margin-top: 25px;
+    align-items: center;
+}
+.choice-header,.type-header{
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 1.23536;
+}
+.type-description{
+    font-size: 12px;
+    color: #1d1d1f;
+    line-height: 1.33337;
+}
+.selected{
+    border: 2px solid #0071e3;
 }

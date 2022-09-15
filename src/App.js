@@ -11,6 +11,9 @@ import Home from './components/Home';
 import Footer from './components/Footer';
 import Watch from './components/Watch';
 import { useState,useEffect } from 'react';
+import Iphone from './components/Iphone';
+import Mac from './components/Mac';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 function App() {
   let imageCount=0
@@ -76,10 +79,14 @@ function App() {
     imageUrl=getDownloadURL(ref(storage, imgLocation))
   }
   return (
-   <div>
-    <Watch slideFront={slideFront} slideBack={slideBack} imageState={imageState}/>
-    <Footer />
-   </div>
+    <BrowserRouter>
+      <Routes>
+          <Route path="/" element={<Home/>}/>
+          <Route path="/mac" element={<Mac slideFront={slideFront} slideBack={slideBack} imageState={imageState}/>}/>
+          <Route path="/watch" element={<Watch slideFront={slideFront} slideBack={slideBack} imageState={imageState}/>}/>
+      </Routes>
+      <Footer />
+   </BrowserRouter>
   );
 }
 

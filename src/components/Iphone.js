@@ -18,7 +18,7 @@ import tmobile from '../images/watch/tmobile.jpeg'
 import verizon  from '../images/watch/verizon.jpeg'
 
 
-function Watch({slideFront,slideBack,imageState}) {
+function Iphone({slideFront,slideBack,imageState}) {
   const dbRef = ref(getDatabase());
   const [data,setData]=useState(null)
   const storage=getStorage()
@@ -29,7 +29,7 @@ function Watch({slideFront,slideBack,imageState}) {
   const [type1Selected,setType1Selected] = useState(false)
 
   useEffect(()=>{ //fetches data on first render
-    get(child(dbRef, 'products/watch')).then((snapshot) => { 
+    get(child(dbRef, 'products/iphone')).then((snapshot) => { 
         if (snapshot.exists()) {
             setData(snapshot.val())
         } else {
@@ -60,7 +60,7 @@ function Watch({slideFront,slideBack,imageState}) {
           <div className='product-header def-font'>
             <div className='product-header-text'>{data.headerTitle}</div>
           </div>
-          <div className='installment-header flex def-font flex'>
+          <div className='flex def-font flex'>
             Pay for your Apple Watch over time, interest-free when you choose to check out with Apple Card Monthly Installments.<sup>◊ </sup><div className='link'>Learn more</div> 
           </div> 
           <div className='product-container flex' style={{width: '80vw'}}>
@@ -132,15 +132,13 @@ function Watch({slideFront,slideBack,imageState}) {
                     <div className='type-price'>for 24 mo.*</div>
                   </div>
                 </div>
-                <div className='def-font link sub-link'>Which case size is right for you?</div>
               </div>
               <div className='types-container def-font'>
                 <div >Connectivity</div>
-                <div className='def-font link sub-link'>What’s the difference between GPS and GPS + Cellular?</div>
                 <div className='type-container flex'>
                   <div className='flex column'>
                     <div className='type-header'>GPS</div>
-                    <div className='type-description'>Make calls and send messages with your iPhone nearby.</div>
+                    <div className='type-description'>Make calls and send messages with your Iphone nearby.</div>
                   </div>
                   <div className='flex column'style={{width: '65%', textAlign:'right'}}> 
                     <div className='type-price'>From $399</div>
@@ -168,20 +166,9 @@ function Watch({slideFront,slideBack,imageState}) {
                       <img className='network-image' src={sprint}/>
                       <img className='network-image' src={tmobile}/>
                     </div>
-                </div>
               </div>
-              <div className='types-container def-font' style={{borderBottom:'none',paddingBottom:"10vh"}}>
-              <div className='type-container flex'>
-                  <div className='flex column'>
-                    <div className='type-header'>One Size</div>
-                    <div className='type-description'>Band fits 145–220mm wrists.</div>
-                  </div>
-                </div>
               </div>
           </div>
-        </div>
-        <div className='contents-container def-font'>
-          <div className='contents-header'>What’s in the Box</div>
         </div>
       </div>
         :<LoadingScreen />}
@@ -189,4 +176,5 @@ function Watch({slideFront,slideBack,imageState}) {
   )
 }
 
-export default Watch
+
+export default Iphone

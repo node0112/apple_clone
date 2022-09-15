@@ -3,6 +3,10 @@
     flex-direction: column;
     align-items: center;
 }
+.sub-link{
+    font-size: 14px;
+    margin-top: 10px;
+}
 .product-header{
     display: flex;
     align-items: center;
@@ -10,6 +14,9 @@
     width: 100%;
     color: #1d1d1f;
     height: 3.3em;
+    border-bottom:1px solid #d2d2d7;
+    background-color: white;
+    z-index: 999;
 }
 .product-header-text{
     width: min(1024px,100%);
@@ -32,14 +39,13 @@
 
 .product-container{
     margin-top: 55px;
-    height: 200vh;
 }
 .right-container{
     width: 408px;
+    flex: 1;
 }
 
 .product-images-container{
-    display: flex;
     justify-content: center;
     overflow: hidden;
     position: sticky;
@@ -48,10 +54,15 @@
 .content-wrapper{
     width: calc(50vw-calc(58%));
     object-fit: contain;
-
     display: flex;
     justify-content: center;
     padding: 107px 50px 70px;
+}
+.product-images{ /*contains all scrollable images*/
+    width: calc(450px*3);
+    transition: all 0.4s;
+    transform: translateX(450px);
+    align-items: center;
 }
 .product-image{
     position: sticky;
@@ -61,13 +72,38 @@
     object-fit: cover;
     transition: all 0.4s;
 }
-.product-images{ /*contains all scrollable images*/
-    width: calc(450px*3);
-    transition: all 0.4s;
-    transform: translateX(450px);
 
+.offers-container{
+    display: flex;
+    justify-content: space-evenly;
+    width: 450px;
+    margin: 14px 0 27px;
+}
+.offer-container{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    font-weight: 500;
+    justify-content: flex-start;
+    line-height: 1.33337;
+    letter-spacing: -.01em;
+    width: 172px;
+    text-align: center;
+}
+.offer-text{
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
 }
 
+.carriers-text{
+    font-size: 14px;
+    margin-top: 35px;
+    margin-bottom: 20px;
+}
+.network-image{
+    height: 41px;
+    margin-right: 21px;
+}
 
 /*-----Image Elements----->*/
 
@@ -88,13 +124,13 @@
 }
 .right-scroll{
     position: absolute;
-    left: 80.5%;
-    top: 50%;
+    top: 45%;
+    left: 80%;
 }
 .left-scroll{
     position: absolute;
-    top: 50%;
-    left: 12%;
+    top: 45%;
+    left: 10%;
 }
 .scroll-button:hover{
     background-color: whitesmoke;
@@ -176,6 +212,7 @@
     line-height: 1.23536;
     margin-top: 25px;
     align-items: center;
+    min-height: 2.88235rem;
 }
 .choice-header,.type-header{
     font-weight: 500;
@@ -189,4 +226,17 @@
 }
 .selected{
     border: 2px solid #0071e3;
+}
+
+/*----------contents-container styling--------->*/
+.contents-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    padding: 20px;
+}
+.contents-header{
+    font-size: 40px;
+    font-weight: 500;
 }

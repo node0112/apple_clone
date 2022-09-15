@@ -1,16 +1,19 @@
 {
   "files": {
-    "main.css": "/apple_clone/static/css/main.a905058f.css",
-    "main.js": "/apple_clone/static/js/main.871b4c88.js",
+    "main.css": "/apple_clone/static/css/main.840c52e5.css",
+    "main.js": "/apple_clone/static/js/main.f86477a6.js",
     "static/js/787.6ceacff6.chunk.js": "/apple_clone/static/js/787.6ceacff6.chunk.js",
     "static/media/watch_logo.png": "/apple_clone/static/media/watch_logo.ab14e3bdd8e3a770981b.png",
+    "static/media/sprint.jpeg": "/apple_clone/static/media/sprint.6c3e834e159e945de2e2.jpeg",
+    "static/media/att.jpeg": "/apple_clone/static/media/att.bc6d0c5d4d0338878904.jpeg",
+    "static/media/tmobile.jpeg": "/apple_clone/static/media/tmobile.02fb820bcb1a37040192.jpeg",
     "index.html": "/apple_clone/index.html",
-    "main.a905058f.css.map": "/apple_clone/static/css/main.a905058f.css.map",
-    "main.871b4c88.js.map": "/apple_clone/static/js/main.871b4c88.js.map",
+    "main.840c52e5.css.map": "/apple_clone/static/css/main.840c52e5.css.map",
+    "main.f86477a6.js.map": "/apple_clone/static/js/main.f86477a6.js.map",
     "787.6ceacff6.chunk.js.map": "/apple_clone/static/js/787.6ceacff6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a905058f.css",
-    "static/js/main.871b4c88.js"
+    "static/css/main.840c52e5.css",
+    "static/js/main.f86477a6.js"
   ]
 }
